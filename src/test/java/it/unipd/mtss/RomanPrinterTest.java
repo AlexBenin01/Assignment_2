@@ -18,7 +18,7 @@ public class RomanPrinterTest {
     public Timeout timer = new Timeout(5000);
 
     @Test
-    public void testPrintI() throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+    public void testPrintI() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 1;
         String expected = new String(" _____ \n" +
                 "|_   _|\n" +
@@ -33,7 +33,7 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testPrintV() throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+    public void testPrintV() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 5;
         String expected = new String("__      __\n" +
                 "\\ \\    / /\n" +
@@ -48,7 +48,7 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testPrintX() throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+    public void testPrintX() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 10;
         String expected = new String("__   __\n" +
                 "\\ \\ / /\n" +
@@ -63,7 +63,7 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testPrintL() throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+    public void testPrintL() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 50;
         String expected = new String(" _      \n" +
                 "| |     \n" +
@@ -78,7 +78,7 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testPrintC() throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+    public void testPrintC() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 100;
         String expected = new String("  _____ \n" +
                 " / ____|\n" +
@@ -93,7 +93,7 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testPrintD() throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+    public void testPrintD() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 500;
         String expected = new String(" _____  \n" +
                 "|  __ \\ \n" +
@@ -108,7 +108,7 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testPrintM() throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+    public void testPrintM() throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 1000;
         String expected = new String(" __  __ \n" +
                 "|  \\/  |\n" +
