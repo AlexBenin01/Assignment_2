@@ -57,7 +57,7 @@ public class RomanPrinter {
     }
 
     public static String print(int num)
-            throws NumberUnderZeroException, NumberOverFiveThousand,
+            throws NumberUnderZeroException, NumberAEFiveThousand,
             NonRightCharacterException {
         return printAsciiArt(IntegerToRoman.convert(num));
     }
