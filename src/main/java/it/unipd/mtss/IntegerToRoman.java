@@ -11,12 +11,12 @@ private static final String[] SYMBOLS = { "M", "CM", "D", "CD", "C", "XC",
         "L", "XL", "X", "IX", "V", "IV", "I" };
 
 public static String convert(int number)
-        throws NumberUnderZeroException, NumberOverFiveThousand {
+        throws NumberUnderZeroException, NumberAEFiveThousand {
     if (number < 0) {
         throw new NumberUnderZeroException();
     }
     if (number > 4999) {
-        throw new NumberOverFiveThousand();
+        throw new NumberAEFiveThousand();
     }
 
     StringBuilder roman = new StringBuilder();
