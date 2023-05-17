@@ -13,20 +13,26 @@ public class IntegerToRomanTest {
         converter = new IntegerToRoman();
     }
 
+<<<<<<< HEAD
     @Test(expected = NumberUnderOneException.class)
     public void testNumberUnderZero() throws NumberUnderOneException, NumberAEFourThousand {
         int arabic_number = -70;
+=======
+    @Test(expected = NumberUnderZeroException.class)
+    public void testNumberUnderZero() throws NumberUnderZeroException, NumberAEFiveThousand {
+        int arabic_number = -5;
+>>>>>>> feature/algoritmi
         converter.convert(arabic_number);
     }
 
-    @Test(expected = NumberAEFourThousand.class)
-    public void testNumberAbove3999() throws NumberUnderOneException, NumberAEFourThousand {
-        int arabic_number = 4000;
+    @Test(expected = NumberAEFiveThousand.class)
+    public void testNumberAbove4999() throws NumberUnderZeroException, NumberAEFiveThousand {
+        int arabic_number = 5000;
         converter.convert(arabic_number);
     }
 
     @Test
-    public void testZeroNumber() throws NumberUnderOneException, NumberAEFourThousand {
+    public void testZeroNumber() throws NumberUnderZeroException, NumberAEFiveThousand {
         int arabic_number = 0;
         String roman_number = converter.convert(arabic_number);
         assertEquals(roman_number, "");
