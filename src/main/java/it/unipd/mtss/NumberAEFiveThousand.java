@@ -4,9 +4,9 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
-public class NumberUnderZeroException extends Exception {
-    /* Eccezione per i numeri sotto lo zero */
-    public NumberUnderZeroException() {
-        super("Non esistono numeri romani in negativo.");
+public class NumberAEFiveThousand extends Exception {
+    /* Eccezione per i numeri superiori o uguali a 5000 */
+    public NumberAEFiveThousand() {
+        super("Non esistono numeri romani maggiori di 4999. ");
     }
 }
