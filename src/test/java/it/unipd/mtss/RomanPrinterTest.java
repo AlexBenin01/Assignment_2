@@ -124,7 +124,7 @@ public class RomanPrinterTest {
 
     @Test
     public void testNumberZeroAsciiArt()
-            throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+            throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 0;
         String expected = "";
 
@@ -135,7 +135,7 @@ public class RomanPrinterTest {
 
     @Test
     public void testLettersCombination1666()
-            throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+            throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 1666;
         String expected = new String(
                 " __  __ " + " _____  " + "  _____ " + " _      " + "__   __" + "__      __" + " _____ \n" +
@@ -154,7 +154,7 @@ public class RomanPrinterTest {
 
     @Test
     public void testLettersCombination511()
-            throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+            throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 511;
         String expected = new String(" _____  " + "__   __" + " _____ \n" +
                 "|  __ \\ " + "\\ \\ / /" + "|_   _|\n"
@@ -171,7 +171,7 @@ public class RomanPrinterTest {
 
     @Test
     public void testLettersCombination56()
-            throws NumberUnderZeroException, NumberOverFiveThousand, NonRightCharacterException {
+            throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 65;
         String expected = new String(" _      " + "__   __" + "__      __\n" +
                 "| |     " + "\\ \\ / /" + "\\ \\    / /\n" +
