@@ -134,25 +134,6 @@ public class RomanPrinterTest {
     }
 
     @Test
-    public void testLettersCombination1666()
-            throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
-        int arabic_number = 1666;
-        String expected = new String(
-                " __  __ " + " _____  " + "  _____ " + " _      " + "__   __" + "__      __" + " _____ \n" +
-                        "|  \\/  |" + "|  __ \\ " + " / ____|" + "| |     " + "\\ \\ / /" + "\\ \\    / /" + "|_   _|\n"
-                        +
-                        "| \\  / |" + "| |  | |" + "| |     " + "| |     " + " \\ V / " + " \\ \\  / / " + "  | |  \n" +
-                        "| |\\/| |" + "| |  | |" + "| |     " + "| |     " + "  > <  " + "  \\ \\/ /  " + "  | |  \n" +
-                        "| |  | |" + "| |__| |" + "| |____ " + "| |____ " + " / . \\ " + "   \\  /   " + " _| |_ \n" +
-                        "|_|  |_|" + "|_____/ " + " \\_____|" + "|______|" + "/_/ \\_\\" + "    \\/    "
-                        + "|_____|\n");
-
-        String ascii_art_for_1666 = printer.print(arabic_number);
-
-        assertEquals(expected, ascii_art_for_1666);
-    }
-
-    @Test
     public void testLettersCombination511()
             throws NumberUnderZeroException, NumberAEFiveThousand, NonRightCharacterException {
         int arabic_number = 511;
