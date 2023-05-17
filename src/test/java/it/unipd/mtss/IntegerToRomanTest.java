@@ -19,21 +19,21 @@ public class IntegerToRomanTest {
     public Timeout timer = new Timeout(2500);
 
     @Test(expected = NumberUnderZeroException.class)
-    public void testNumberUnderZero() throws NumberUnderZeroException, NumberOverFiveThousand {
+    public void testNumberUnderZero() throws NumberUnderZeroException, NumberAEFiveThousand {
         int arabic_number = -15;
 
         converter.convert(arabic_number);
     }
 
-    @Test(expected = NumberOverFiveThousand.class)
-    public void testNumberAbove4999() throws NumberUnderZeroException, NumberOverFiveThousand {
+    @Test(expected = NumberAEFiveThousand.class)
+    public void testNumberAbove4999() throws NumberUnderZeroException, NumberAEFiveThousand {
         int arabic_number = 5000;
 
         converter.convert(arabic_number);
     }
 
     @Test
-    public void testZeroNumber() throws NumberUnderZeroException, NumberOverFiveThousand {
+    public void testZeroNumber() throws NumberUnderZeroException, NumberAEFiveThousand {
         int arabic_number = 0;
         String expected = "";
 
