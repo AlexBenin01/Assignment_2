@@ -13,15 +13,14 @@ public class IntegerToRomanTest {
         converter = new IntegerToRoman();
     }
 
-<<<<<<< HEAD
     @Test(expected = NumberUnderOneException.class)
     public void testNumberUnderZero() throws NumberUnderOneException, NumberAEFourThousand {
         int arabic_number = -70;
-=======
+
     @Test(expected = NumberUnderZeroException.class)
     public void testNumberUnderZero() throws NumberUnderZeroException, NumberAEFiveThousand {
         int arabic_number = -5;
->>>>>>> feature/algoritmi
+     feature/algoritmi
         converter.convert(arabic_number);
     }
 
