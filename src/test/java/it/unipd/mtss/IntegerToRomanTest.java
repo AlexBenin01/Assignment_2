@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.Rule;
+import org.junit.rules.Timeout;
 
 public class IntegerToRomanTest {
     static IntegerToRoman converter = null;
