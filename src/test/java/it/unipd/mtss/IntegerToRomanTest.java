@@ -13,7 +13,7 @@ public class IntegerToRomanTest {
         converter = new IntegerToRoman();
     }
 
-    @Test(expected = NumberUnderZeroException.class)
+    @Test(expected = NumberUnderOneException.class)
     public void testNumberUnderZero() throws NumberUnderOneException, NumberAEFourThousand {
         int arabic_number = -70;
         converter.convert(arabic_number);
